@@ -97,5 +97,5 @@ class SpawnDataCatalogue(
         }
     }
 
-    override fun toClientData() = ClientSpawnDataCatalogue(spawnDetailIds)
+    override fun toClientData() = ClientSpawnDataCatalogue(spawnDetailIds.toMutableSet())
 }
